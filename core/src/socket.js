@@ -56,8 +56,8 @@ export default class Socket extends EventEmitter {
             // callback.
             if (this.rawSocket && this.rawSocket.onclose)
               delete this.rawSocket.onclose;
-            // Safe to perform even if the socket is already closed
-            this.rawSocket.close();
+            //DAL NOT Safe to perform even if the socket is already closed
+            // this.rawSocket.close(); <-- This is not safe to perform, even if the socket is already closed
             this.rawSocket = null;
             this.emit("close");
         };

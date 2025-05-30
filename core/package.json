@@ -2,7 +2,7 @@
   "name": "simpleddp-core",
   "version": "1.0.6",
   "description": "ddp javascript client",
-  "main": "lib/ddp.js",
+  "main": "src/ddp.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "clean": "rimraf lib coverage",

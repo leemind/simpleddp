@@ -1,7 +1,7 @@
 import EventEmitter from "wolfy87-eventemitter";
-import Queue from "./queue";
-import Socket from "./socket";
-import {contains, uniqueId} from "./utils";
+import Queue from "./queue.js";
+import Socket from "./socket.js";
+import {contains, uniqueId} from "./utils.js";
 
 const DDP_VERSION = "1";
 const PUBLIC_EVENTS = [
